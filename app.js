@@ -32,7 +32,8 @@ app.use('/admin',adminData.routes);
 app.use(shopRoutes);
 
 app.use('/',(req,res,next)=>{
-    res.status(404).render('404',{docTitle:"Page Not Found!!",productCSS:false,formCSS:false});
+    // res.status(404).render('404',{docTitle:"Page Not Found!!",productCSS:false,formCSS:false});
+    res.status(404).render('404',{docTitle:"Page Not Found!!",path:''});
 });
 
 const server = http.createServer(app);

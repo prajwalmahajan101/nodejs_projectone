@@ -9,7 +9,8 @@ const products=[];
 
 router.get('/add-product',(req,res,next) => {
     // console.log('in the another Middleware!!!');
-    res.render('add-product',{docTitle:"Add Product!!!",path:"/admin/add-product",productCSS:true,formCSS:true,isAddProduct:true});
+    // res.render('add-product',{docTitle:"Add Product!!!",path:"/admin/add-product",productCSS:true,formCSS:true,isAddProduct:true});
+    res.render('add-product',{docTitle:"Add Product!!!",path:"/admin/add-product"});
 });
 
 
